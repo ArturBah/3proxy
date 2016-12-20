@@ -51,8 +51,3 @@ For Uninstall Download, make executable and run with these lines :
 - Ubuntu 12.10 
 - Ubuntu 12.04 
 - Ubuntu 14.04
-
-<<<<<<< HEAD
-=======
-http://barankilic.github.io/3proxy/
->>>>>>> origin/master
