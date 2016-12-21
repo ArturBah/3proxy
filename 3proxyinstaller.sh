@@ -1,4 +1,4 @@
-apt-get update && apt-get -y upgrade
+apt-get update
 apt-get install -y build-essential nano wget tar gzip
 wget --no-check-certificate https://github.com/z3APA3A/3proxy/archive/3proxy-0.8.8.tar.gz
 tar xzf 3proxy-0.8.8.tar.gz
@@ -13,7 +13,7 @@ chmod 600 /etc/3proxy/3proxy.cfg
 wget --no-check-certificate https://github.com/arturbah/3proxy/raw/master/.proxyauth
 chmod 600 /etc/3proxy/.proxyauth
 mkdir /var/log/3proxy
-chown nobody:nobody /var/log/3proxy
+chown nobody:nogroup /var/log/3proxy
 cd /etc/init.d/
 wget --no-check-certificate https://raw.github.com/arturbah/3proxy/master/3proxyinit
 chmod  +x /etc/init.d/3proxyinit
