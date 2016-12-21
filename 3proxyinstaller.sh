@@ -6,7 +6,11 @@ cd 3proxy-3proxy-0.8.8
 make -f Makefile.Linux
 cd src
 mkdir /etc/3proxy/
-mv 3proxy /etc/3proxy/
+cp 3proxy /etc/3proxy/
+cd ..
+cd ..
+rm 3proxy-0.8.8.tar.gz
+rm -r 3proxy-3proxy-0.8.8
 cd /etc/3proxy/
 wget --no-check-certificate https://github.com/arturbah/3proxy/raw/master/3proxy.cfg
 chmod 600 /etc/3proxy/3proxy.cfg
