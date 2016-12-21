@@ -8,3 +8,4 @@ rm /etc/rc3.d/*proxyinit
 rm /etc/rc4.d/*proxyinit
 rm /etc/rc5.d/*proxyinit
 rm /etc/init.d/3proxyinit
+rm -rf /var/log/3proxy
