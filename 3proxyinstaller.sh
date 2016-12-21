@@ -17,7 +17,7 @@ chmod 600 /etc/3proxy/3proxy.cfg
 wget --no-check-certificate https://github.com/arturbah/3proxy/raw/master/.proxyauth
 chmod 444 /etc/3proxy/.proxyauth
 mkdir /var/log/3proxy
-chmod 666 /var/log/3proxy
+chmod 777 /var/log/3proxy
 cd /etc/init.d/
 wget --no-check-certificate https://raw.github.com/arturbah/3proxy/master/3proxyinit
 chmod  +x /etc/init.d/3proxyinit
