@@ -6,20 +6,15 @@
 # Required-Stop:     $remote_fs $syslog
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# chkconfig: 2345 20 80
-# Short-Description: 3proxy server
-# Description: 3proxy server
+# Short-Description: Initialize 3proxy server
+# Description: starts 3proxy
 ### END INIT INFO
 
 case "$1" in
-   start)    
+   start)
        echo Starting 3Proxy
-   
+
        /etc/3proxy/3proxy /etc/3proxy/3proxy.cfg
-   
-       RETVAL=$?
-       echo
-       [ $RETVAL ]    
        ;;
 
    stop)
@@ -32,7 +27,7 @@ case "$1" in
        /usr/bin/killall -s USR1 3proxy
        ;;
    *)
-       echo Usage: $0 "{start|stop|restart}"
+       echo Usage: \$0 "{start|stop|restart}"
        exit 1
 esac
 exit 0
